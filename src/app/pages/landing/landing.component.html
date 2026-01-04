@@ -1,0 +1,292 @@
+<app-navbar></app-navbar>
+
+<main>
+  <!-- HERO -->
+  <section id="hero" class="pt-10">
+    <div class="mx-auto grid w-[min(1120px,calc(100%-40px))] gap-6 lg:grid-cols-2 lg:items-start">
+      <div class="py-4">
+        <div class="inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/6 px-3 py-2 text-xs text-muted">
+          <span class="h-2 w-2 rounded-full bg-gradient-to-br from-brand to-brand2 shadow-[0_0_0_4px_rgba(110,231,255,0.12)]"></span>
+          <span>Plan · Track · Deliver</span>
+        </div>
+
+        <h1 class="mt-4 text-[clamp(36px,4.2vw,54px)] font-extrabold leading-[1.08] tracking-tight">
+          A modern task UI that keeps teams aligned and shipping.
+        </h1>
+
+        <p class="mt-3 max-w-2xl text-base leading-7 text-muted">
+          Clean dashboard previews, clear prioritization, and progress you can trust.
+          Designed to be customized—without cloning anyone else’s design.
+        </p>
+
+        <div class="mt-5 flex flex-wrap gap-2">
+          <button class="rounded-xl border border-brand/35 bg-gradient-to-br from-brand/20 to-brand2/20 px-4 py-3 text-sm hover:border-brand/55">
+            Start Free
+          </button>
+          <button class="rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm hover:bg-white/10">
+            View Demo
+          </button>
+        </div>
+
+        <div class="mt-6 grid gap-3 md:grid-cols-3">
+          <div class="rounded-2xl border border-white/8 bg-white/4 p-3">
+            <div class="font-extrabold tracking-tight">24%</div>
+            <div class="mt-1 text-xs text-muted2">Faster cycle time</div>
+          </div>
+          <div class="rounded-2xl border border-white/8 bg-white/4 p-3">
+            <div class="font-extrabold tracking-tight">3x</div>
+            <div class="mt-1 text-xs text-muted2">Clearer ownership</div>
+          </div>
+          <div class="rounded-2xl border border-white/8 bg-white/4 p-3">
+            <div class="font-extrabold tracking-tight">99.9%</div>
+            <div class="mt-1 text-xs text-muted2">Uptime target</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PREVIEW -->
+      <div class="rounded-xl2 border border-stroke bg-panel shadow-soft backdrop-blur p-4 overflow-hidden">
+        <div class="flex items-center gap-2 rounded-2xl border border-white/8 bg-white/4 p-2">
+          <span class="rounded-full border border-white/10 bg-white/4 px-3 py-2 text-xs text-muted">Workspace</span>
+          <span class="rounded-full border border-brand/30 bg-brand/10 px-3 py-2 text-xs text-text">Sprint</span>
+          <span class="rounded-full border border-white/10 bg-white/4 px-3 py-2 text-xs text-muted">Reports</span>
+          <span class="flex-1"></span>
+          <span class="flex items-center gap-2 rounded-full border border-white/10 bg-black/20 px-3 py-2 text-xs text-muted2">
+            <span class="relative h-2.5 w-2.5 rounded-full border-2 border-white/65 after:absolute after:-right-2 after:-bottom-1 after:h-0.5 after:w-2 after:rotate-[35deg] after:rounded-full after:bg-white/65"></span>
+            Search tasks...
+          </span>
+        </div>
+
+        <div class="mt-4 grid gap-3 md:grid-cols-3">
+          <!-- Backlog -->
+          <div class="rounded-2xl border border-white/8 bg-white/3 p-3">
+            <div class="mb-3 flex items-center justify-between text-xs text-muted">
+              <span>Backlog</span>
+              <span class="rounded-full border border-white/10 bg-white/6 px-2 py-0.5 text-[11px] text-white/80">6</span>
+            </div>
+
+            <div class="mb-3 rounded-2xl border border-white/10 bg-black/20 p-3">
+              <div class="text-[13px] font-semibold tracking-tight">Define scope for Q1</div>
+              <div class="mt-2 flex items-center justify-between text-xs">
+                <span class="rounded-full border border-white/12 bg-white/4 px-2 py-0.5 text-[11px] text-muted">Low</span>
+                <span class="text-muted2">Due Fri</span>
+              </div>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-black/20 p-3">
+              <div class="text-[13px] font-semibold tracking-tight">Finalize UI kit tokens</div>
+              <div class="mt-2 flex items-center justify-between text-xs">
+                <span class="rounded-full border border-white/12 bg-white/4 px-2 py-0.5 text-[11px] text-muted">Med</span>
+                <span class="text-muted2">Due Mon</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- In Progress -->
+          <div class="rounded-2xl border border-white/8 bg-white/3 p-3">
+            <div class="mb-3 flex items-center justify-between text-xs text-muted">
+              <span>In Progress</span>
+              <span class="rounded-full border border-brand/25 bg-white/6 px-2 py-0.5 text-[11px] text-white/80">3</span>
+            </div>
+
+            <div class="mb-3 rounded-2xl border border-white/10 bg-black/20 p-3 shadow-[0_0_0_1px_rgba(110,231,255,0.12),0_18px_50px_rgba(110,231,255,0.08)]">
+              <div class="text-[13px] font-semibold tracking-tight">Implement auth flow</div>
+              <div class="mt-2 flex items-center justify-between text-xs">
+                <span class="rounded-full border border-brand/25 bg-brand/8 px-2 py-0.5 text-[11px] text-white/85">High</span>
+                <span class="text-muted2">Owner: Dev</span>
+              </div>
+              <div class="mt-3 h-2 overflow-hidden rounded-full border border-white/10 bg-white/6">
+                <div class="h-full w-[62%] bg-gradient-to-r from-brand to-brand2"></div>
+              </div>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-black/20 p-3">
+              <div class="text-[13px] font-semibold tracking-tight">Create onboarding tour</div>
+              <div class="mt-2 flex items-center justify-between text-xs">
+                <span class="rounded-full border border-white/12 bg-white/4 px-2 py-0.5 text-[11px] text-muted">Med</span>
+                <span class="text-muted2">Owner: PM</span>
+              </div>
+              <div class="mt-3 h-2 overflow-hidden rounded-full border border-white/10 bg-white/6">
+                <div class="h-full w-[35%] bg-gradient-to-r from-brand to-brand2"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Done -->
+          <div class="rounded-2xl border border-white/8 bg-white/3 p-3">
+            <div class="mb-3 flex items-center justify-between text-xs text-muted">
+              <span>Done</span>
+              <span class="rounded-full border border-emerald-200/25 bg-white/6 px-2 py-0.5 text-[11px] text-white/80">8</span>
+            </div>
+
+            <div class="mb-3 rounded-2xl border border-white/10 bg-black/20 p-3 opacity-90">
+              <div class="text-[13px] font-semibold tracking-tight">Set milestones</div>
+              <div class="mt-2 flex items-center justify-between text-xs">
+                <span class="rounded-full border border-emerald-200/22 bg-emerald-200/8 px-2 py-0.5 text-[11px] text-white/85">Done</span>
+                <span class="text-muted2">Yesterday</span>
+              </div>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-black/20 p-3 opacity-90">
+              <div class="text-[13px] font-semibold tracking-tight">Invite team members</div>
+              <div class="mt-2 flex items-center justify-between text-xs">
+                <span class="rounded-full border border-emerald-200/22 bg-emerald-200/8 px-2 py-0.5 text-[11px] text-white/85">Done</span>
+                <span class="text-muted2">Last week</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-3 flex items-center justify-between rounded-2xl border border-white/8 bg-white/3 p-3">
+          <div>
+            <div class="text-xs text-muted2">Sprint progress</div>
+            <div class="font-extrabold tracking-tight">54%</div>
+          </div>
+          <div class="flex items-end gap-1.5">
+            <span class="h-2.5 w-2 rounded-full border border-white/14 bg-white/18"></span>
+            <span class="h-4 w-2 rounded-full border border-white/14 bg-white/18"></span>
+            <span class="h-3 w-2 rounded-full border border-white/14 bg-white/18"></span>
+            <span class="h-5 w-2 rounded-full border border-white/14 bg-white/18"></span>
+            <span class="h-3.5 w-2 rounded-full border border-white/14 bg-white/18"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="py-16">
+    <div class="mx-auto w-[min(1120px,calc(100%-40px))]">
+      <h2 class="text-[clamp(24px,3vw,34px)] font-extrabold tracking-tight">Features designed for clarity</h2>
+      <p class="mt-2 max-w-2xl text-base leading-7 text-muted">
+        A simple UI foundation you can extend for your workflow, approvals, and reporting.
+      </p>
+
+      <div class="mt-6 grid gap-4 md:grid-cols-3">
+        <div class="rounded-xl2 border border-stroke bg-panel shadow-soft backdrop-blur p-5">
+          <div class="mb-3 h-11 w-11 rounded-2xl border border-white/12 bg-gradient-to-br from-brand/40 to-brand2/22"></div>
+          <div class="font-extrabold tracking-tight">Fast capture</div>
+          <div class="mt-2 text-sm leading-7 text-muted">Quick-add tasks with clean metadata and consistent structure.</div>
+        </div>
+
+        <div class="rounded-xl2 border border-stroke bg-panel shadow-soft backdrop-blur p-5">
+          <div class="mb-3 h-11 w-11 rounded-2xl border border-white/12 bg-gradient-to-br from-brand2/38 to-brand/20"></div>
+          <div class="font-extrabold tracking-tight">Priorities that stand out</div>
+          <div class="mt-2 text-sm leading-7 text-muted">High/medium/low labels with progress indicators and due cues.</div>
+        </div>
+
+        <div class="rounded-xl2 border border-stroke bg-panel shadow-soft backdrop-blur p-5">
+          <div class="mb-3 h-11 w-11 rounded-2xl border border-white/12 bg-gradient-to-br from-accent/35 to-brand2/18"></div>
+          <div class="font-extrabold tracking-tight">Reports preview</div>
+          <div class="mt-2 text-sm leading-7 text-muted">Lightweight KPI widgets and charts for stakeholder updates.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREVIEW STRIP -->
+  <section id="preview" class="py-16">
+    <div class="mx-auto grid w-[min(1120px,calc(100%-40px))] gap-4 rounded-xl2 border border-stroke bg-panel shadow-soft backdrop-blur p-5 md:grid-cols-[1.2fr_.8fr]">
+      <div>
+        <h2 class="text-[clamp(24px,3vw,34px)] font-extrabold tracking-tight">A dashboard preview that feels premium</h2>
+        <p class="mt-2 max-w-2xl text-base leading-7 text-muted">
+          This template is intentionally generic and original, so you can adapt it to your product data.
+        </p>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <button class="rounded-xl border border-brand/35 bg-gradient-to-br from-brand/20 to-brand2/20 px-4 py-3 text-sm hover:border-brand/55">Request UI Pack</button>
+          <button class="rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm hover:bg-white/10">See Components</button>
+        </div>
+      </div>
+
+      <div class="grid gap-3 md:grid-cols-3">
+        <div class="rounded-2xl border border-white/8 bg-white/3 p-4">
+          <div class="text-xl font-black tracking-tight">12</div>
+          <div class="mt-1 text-xs text-muted2">Statuses</div>
+        </div>
+        <div class="rounded-2xl border border-white/8 bg-white/3 p-4">
+          <div class="text-xl font-black tracking-tight">8</div>
+          <div class="mt-1 text-xs text-muted2">Views</div>
+        </div>
+        <div class="rounded-2xl border border-white/8 bg-white/3 p-4">
+          <div class="text-xl font-black tracking-tight">∞</div>
+          <div class="mt-1 text-xs text-muted2">Tasks</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="py-16">
+    <div class="mx-auto w-[min(1120px,calc(100%-40px))]">
+      <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <div>
+          <h2 class="text-[clamp(24px,3vw,34px)] font-extrabold tracking-tight">Pricing that scales with you</h2>
+          <p class="mt-2 max-w-2xl text-base leading-7 text-muted">Toggle monthly/yearly to test layout behavior.</p>
+        </div>
+
+        <div class="inline-flex rounded-2xl border border-stroke bg-panel shadow-soft backdrop-blur p-1">
+          <button class="rounded-xl px-4 py-2 text-sm"
+                  [ngClass]="{
+                    'text-text': billing() === 'monthly',
+                    'bg-white/8': billing() === 'monthly',
+                    'text-muted': billing() !== 'monthly'
+                  }"
+                  (click)="setBilling('monthly')">Monthly</button>
+          <button class="rounded-xl px-4 py-2 text-sm"
+                  [ngClass]="{
+                    'text-text': billing() === 'yearly',
+                    'bg-white/8': billing() === 'yearly',
+                    'text-muted': billing() !== 'yearly'
+                  }"
+                  (click)="setBilling('yearly')">Yearly</button>
+        </div>
+      </div>
+
+      <div class="mt-6 grid gap-4 md:grid-cols-3">
+        <div *ngFor="let plan of plans()"
+             class="rounded-xl2 border border-stroke bg-panel shadow-soft backdrop-blur p-5 grid gap-3"
+             [ngClass]="{
+               'shadow-[0_0_0_1px_rgba(110,231,255,0.12),0_18px_50px_rgba(0,0,0,0.35)]': plan.emphasized,
+               'border-brand/28': plan.emphasized
+             }">
+          <div class="font-black tracking-tight">{{ plan.name }}</div>
+          <div class="text-3xl font-black tracking-tight">{{ plan.price }}</div>
+          <div class="text-sm text-muted">{{ plan.blurb }}</div>
+
+          <ul class="ml-4 list-disc text-sm leading-7 text-muted">
+            <li *ngFor="let b of plan.bullets">{{ b }}</li>
+          </ul>
+
+          <button class="rounded-xl border px-4 py-3 text-sm hover:bg-white/10"
+                  [ngClass]="{
+                    'border-brand/35': plan.emphasized,
+                    'bg-gradient-to-br': plan.emphasized,
+                    'from-brand/20': plan.emphasized,
+                    'to-brand2/20': plan.emphasized,
+                    'border-white/15': !plan.emphasized,
+                    'bg-white/5': !plan.emphasized
+                  }">
+            Choose {{ plan.name }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-16">
+    <div class="mx-auto w-[min(1120px,calc(100%-40px))]">
+      <h2 class="text-[clamp(24px,3vw,34px)] font-extrabold tracking-tight">FAQ</h2>
+      <p class="mt-2 max-w-2xl text-base leading-7 text-muted">Common implementation questions for this Angular + Tailwind template.</p>
+
+      <div class="mt-6 grid gap-3">
+        <details *ngFor="let f of faqs" class="rounded-xl2 border border-stroke bg-panel shadow-soft backdrop-blur p-4">
+          <summary class="cursor-pointer font-bold">{{ f.q }}</summary>
+          <p class="mt-3 text-sm leading-7 text-muted">{{ f.a }}</p>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<app-footer></app-footer>

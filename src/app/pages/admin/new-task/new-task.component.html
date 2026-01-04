@@ -1,0 +1,71 @@
+<div class="mx-auto max-w-3xl px-6 py-10">
+    <div class="mb-6">
+        <h1 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Create New Task</h1>
+        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Capture the details below to add a task to your workflow.</p>
+    </div>
+
+    <form (ngSubmit)="saveTask()" #taskForm="ngForm" class="space-y-6 rounded-3xl border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-800 dark:bg-gray-900">
+        <div class="grid gap-6 md:grid-cols-2">
+            <div class="space-y-2">
+                <label class="text-sm font-semibold text-gray-700 dark:text-gray-200" for="taskId">Task ID</label>
+                <input
+                    id="taskId"
+                    name="taskId"
+                    type="text"
+                    [(ngModel)]="task.taskId"
+                    required
+                    class="w-full rounded-xl border border-gray-200 bg-gray-50 px-3 py-2 text-sm text-gray-900 placeholder-gray-400 shadow-sm focus:border-brand/60 focus:outline-none focus:ring-2 focus:ring-brand/20 dark:border-gray-700 dark:bg-gray-800/60 dark:text-white"
+                    placeholder="TSK-204"
+                />
+            </div>
+
+            <div class="space-y-2">
+                <label class="text-sm font-semibold text-gray-700 dark:text-gray-200" for="dueDate">Due Date</label>
+                <input
+                    id="dueDate"
+                    name="dueDate"
+                    type="date"
+                    [(ngModel)]="task.dueDate"
+                    required
+                    class="w-full rounded-xl border border-gray-200 bg-gray-50 px-3 py-2 text-sm text-gray-900 shadow-sm focus:border-brand/60 focus:outline-none focus:ring-2 focus:ring-brand/20 dark:border-gray-700 dark:bg-gray-800/60 dark:text-white"
+                />
+            </div>
+
+            <div class="space-y-2 md:col-span-2">
+                <label class="text-sm font-semibold text-gray-700 dark:text-gray-200" for="title">Title</label>
+                <textarea
+                    id="title"
+                    name="title"
+                    [(ngModel)]="task.title"
+                    required
+                    rows="2"
+                    class="w-full rounded-xl border border-gray-200 bg-gray-50 px-3 py-2 text-sm text-gray-900 placeholder-gray-400 shadow-sm focus:border-brand/60 focus:outline-none focus:ring-2 focus:ring-brand/20 dark:border-gray-700 dark:bg-gray-800/60 dark:text-white"
+                    placeholder="Launch the Q3 onboarding flow"
+                ></textarea>
+            </div>
+
+            <div class="space-y-2 md:col-span-2">
+                <label class="text-sm font-semibold text-gray-700 dark:text-gray-200" for="description">Description</label>
+                <textarea
+                    id="description"
+                    name="description"
+                    [(ngModel)]="task.description"
+                    required
+                    rows="4"
+                    class="w-full rounded-xl border border-gray-200 bg-gray-50 px-3 py-2 text-sm text-gray-900 placeholder-gray-400 shadow-sm focus:border-brand/60 focus:outline-none focus:ring-2 focus:ring-brand/20 dark:border-gray-700 dark:bg-gray-800/60 dark:text-white"
+                    placeholder="Include scope, owner, and any blockers before kickoff."
+                ></textarea>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-end gap-3">
+            <button
+                type="submit"
+                [disabled]="taskForm.invalid"
+                class="inline-flex items-center justify-center rounded-xl border border-brand/35 bg-gradient-to-br from-brand/20 to-brand2/20 px-5 py-2.5 text-sm font-semibold text-gray-900 transition hover:border-brand/60 dark:text-white"
+            >
+                Create Task
+            </button>
+        </div>
+    </form>
+</div>
